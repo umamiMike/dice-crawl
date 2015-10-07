@@ -9,7 +9,7 @@
 
 <div class="board" ng-controller="TilesCtrl">
   <div class="row">
-    <div class="tile" ng-repeat="tile in tiles | limitTo: 5: 0" droppable drop="handleDrop()">
+    <div class="tile" droppable-area ng-repeat="tile in tiles | limitTo: 5: 0">
       <img class="tile__image" place-player rotate-tile ng-src="img/img{{ tile.name }}.jpg" alt="" />
       <img class="backside" reveal-tile src="img/img0.jpg">
       <img class="hide playerdefault-blue player-marker" src="img/players/BluePlayer.png">
