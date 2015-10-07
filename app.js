@@ -1,5 +1,5 @@
 var diceCrawl = angular.module('diceCrawl', ['ui.router']);
-
+//var diceCrawl = angular.module('diceCrawl',['ngDraggable']);
 diceCrawl.config(function($stateProvider, $urlRouterProvider){
     $stateProvider.state('home', {
         url: '',
@@ -18,7 +18,6 @@ diceCrawl.config(function($stateProvider, $urlRouterProvider){
             }
         }
     });
-
 
 
     // $stateProvider.state('home', {

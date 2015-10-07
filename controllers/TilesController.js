@@ -1,4 +1,4 @@
-diceCrawl.controller('TilesCtrl', function TilesCtrl($scope, TilesFactory){
+diceCrawl.controller('TilesCtrl', function TilesCtrl($scope, TilesFactory, GamesFactory){
     $scope.TilesFactory = TilesFactory;
     $scope.getTiles=function(n){
         return new Array(n);
@@ -11,6 +11,8 @@ diceCrawl.controller('TilesCtrl', function TilesCtrl($scope, TilesFactory){
     $scope.tiles = shuffle(TilesFactory.tiles);
 
     $scope.dragon = TilesFactory.dragon;
+
+
 
 
 });

@@ -37,6 +37,10 @@ diceCrawl.factory("placePlayerButton", function() {
     return mySharedObject;
 });
 
+
+diceCrawl.factory("handleDrop", function() {
+   alert('Item has been dropped');
+});
 //
 // notes:
 //
