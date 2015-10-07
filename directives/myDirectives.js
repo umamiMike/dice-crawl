@@ -74,13 +74,13 @@ diceCrawl.directive("placePlayer", function(placePlayerButton) {
         link: function (scope, element) {
             element.bind("click", function() {
                 if (placePlayerButton.shared) {
-                    if (placePlayerButton.color == "blue"){
+                    if (placePlayerButton.color == "Blue"){
                         element.next().next().toggleClass("hide");
-                    } else if (placePlayerButton.color == "green"){
+                    } else if (placePlayerButton.color == "Green"){
                         element.next().next().next().toggleClass("hide");
-                    } else if (placePlayerButton.color == "red"){
+                    } else if (placePlayerButton.color == "Red"){
                         element.next().next().next().next().toggleClass("hide");
-                    } else if (placePlayerButton.color == "yellow"){
+                    } else if (placePlayerButton.color == "Yellow"){
                         element.next().next().next().next().next().toggleClass("hide");
                     }
                 }

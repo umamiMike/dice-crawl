@@ -152,27 +152,27 @@ position: absolute;
 }
 
 
-.red{
+.Red{
     background-color: rgb(113, 15, 15);
     color:white;
 }
-.yellow{
+.Yellow{
 background-color:rgb(241, 241, 0);
 }
-.blue{
+.Blue{
 background-color:rgb(41, 41, 76);
 color:white;
 }
 
-.blue button{
+.Blue button{
 color: black;
 }
 
-.red button{
+.Red button{
 color: black;
 }
 
-.green{
+.Green{
 background-color:green;
 }
 

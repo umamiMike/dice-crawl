@@ -2,7 +2,7 @@ diceCrawl.controller('PlayersCtrl', function PlayerCtrl($scope, GamesFactory){
 
 $scope.maxPlayers = GamesFactory.maxPlayers;
 $scope.players = GamesFactory.players;
-var colors = ["red","green","yellow","blue"];
+var colors = ["Red","Green","Yellow","Blue"];
 var classes = [
 
   { className: "Alchemist",
@@ -158,7 +158,7 @@ Player.prototype.setAbilities = function(){
 }
 
 Player.prototype.diceRoll = function() {
-  this.roll = GamesFactory.rollDice(); 
+  this.roll = GamesFactory.rollDice();
 }
 
  //Functions to place in the gameFactory at somePoint
@@ -167,7 +167,7 @@ Player.prototype.diceRoll = function() {
          var player = new Player();
          player.setPlayerColor();
          player.setAbilities();
-         player.diceRoll(); 
+         player.diceRoll();
          $scope.players.push(player);
 
             //  console.log("Player: " + i + " is: ");
