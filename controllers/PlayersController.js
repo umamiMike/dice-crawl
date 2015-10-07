@@ -159,6 +159,7 @@ Player.prototype.setAbilities = function(){
 
 Player.prototype.diceRoll = function() {
   this.roll = GamesFactory.rollDice();
+  console.log(this.roll);
 }
 
  //Functions to place in the gameFactory at somePoint
