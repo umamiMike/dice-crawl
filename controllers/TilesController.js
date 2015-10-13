@@ -16,13 +16,20 @@ diceCrawl.controller('TilesCtrl', function TilesCtrl($scope, TilesFactory, Games
     }
 
     $scope.initTiles = function (){
+            var a=[],b=[],c=[],d=[],e=[];
           for (var i = 0; i < 25; ++i ) {
              var myTile = $scope.randomSelectDelete($scope.allTiles);
-            $scope.tiles.push(myTile);
-            console.log(myTile);
-
+             myTile["dice"] = [];
+//multidimensional array time...each a b c d e are the rows...
+            if (i % 5 == 0){a.push(myTile);}
+            if (i % 5 == 1){b.push(myTile);}
+            if (i % 5 == 2){c.push(myTile);}
+            if (i % 5 == 3){d.push(myTile);}
+            if (i % 5 == 4){e.push(myTile);}
         }//end for
-            $scope.tiles.splice(12,0, TilesFactory.dragon);
+        c[2] = TilesFactory.dragon;//putting the dragon where he goes.
+            $scope.tiles.push(a,b,c,d,e);//pushing the rows into the tiles array (array of arrays now)
+          console.log($scope.tiles);
       }//end init
 
     $scope.dragon = TilesFactory.dragon;
