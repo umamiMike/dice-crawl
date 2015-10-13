@@ -20,6 +20,16 @@ diceCrawl.controller('TilesCtrl', function TilesCtrl($scope, TilesFactory, Games
           for (var i = 0; i < 25; ++i ) {
              var myTile = $scope.randomSelectDelete($scope.allTiles);
              myTile["dice"] = [];
+             myTile["doors"] = [];
+
+//what I want to do is have an array of 4 true or false statements like [true,true,false,false]
+//starting at the top going in clockwise rotation
+                if (myTile.type === 2){myTile.doors = [false,true,false,true]};
+                if (myTile.type === 4){myTile.doors = [false,true,true,false]};
+                if (myTile.type === 3){myTile.doors = [false,true,true,true]};
+                if (myTile.type === 1){myTile.doors = [true,true,true,true]};
+
+//am converting the type to an array
 //multidimensional array time...each a b c d e are the rows...
             if (i % 5 == 0){a.push(myTile);}
             if (i % 5 == 1){b.push(myTile);}
