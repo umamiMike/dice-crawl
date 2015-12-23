@@ -18,6 +18,7 @@ diceCrawl.directive("placePlayer", function(placePlayerButton) {
         link: function (scope, element, attrs) {
             element.bind("click", function() {
                 if (placePlayerButton.shared) {
+
                     if (placePlayerButton.color == "blue"){
                         angular.element('.tile-'+attrs.placePlayer).closest('.playerdefault-blue').toggleClass("hide");
                     } else if (placePlayerButton.color == "green"){
@@ -26,6 +27,7 @@ diceCrawl.directive("placePlayer", function(placePlayerButton) {
                         angular.element('.tile-'+attrs.placePlayer).closest('.playerdefault-red').toggleClass("hide");
                     } else if (placePlayerButton.color == "yellow"){
                         angular.element('.tile-'+attrs.placePlayer).closest('.playerdefault-yellow').toggleClass("hide");
+
                     }
                 }
             });
